@@ -46,12 +46,19 @@ a{
     margin-right: auto;
 }
 /* =============== Header =============== */
-
+.main-header{
+    border-bottom: 1px solid #e7e9fc
+}
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header-nav{
+    padding: 24px 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -107,7 +114,7 @@ a{
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    width: 496px;
+    max-width: 496px;
     letter-spacing: 0.02em;
     color: #fff;    
     display: block;
@@ -121,9 +128,11 @@ a{
     letter-spacing: 0.04em;
     color: #fff;
     font-family: "Roboto", sans-serif;
-    padding: 16px 32px;
     display: block;
     margin: 0 auto;
+    max-width: 169px;
+    height: 56px;
+    border-radius: 4px;
 }
 .maun-section-btn:hover,
 .maun-section-btn:focus{
@@ -134,11 +143,11 @@ background: #404bbf;
 .about-list{
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 120px 0 120px;
     gap: 24px;
 }
 .about-item{
-    width: 260px;
+    width: calc((100% - 72px) / 4);
 }
 .about-title{
     font-weight: 500;
@@ -170,10 +179,16 @@ background: #404bbf;
 .our-team-list{
     display: flex;
     gap: 24px;
+    border-radius: 0px 0px 4px 4px;
 }
 .our-team-item{
     background-color: #fff;
     text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 32px;
+}
+.our-team-block{
+    padding: 32px 0 32px;
 }
 .our-team-img{
     margin-bottom: 28px;
@@ -185,11 +200,12 @@ background: #404bbf;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 .our-team-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
+    text-align: center;
 }
 /* ============== our-portfolio ============ */
 
@@ -201,25 +217,20 @@ background: #404bbf;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
-.our-portfolio-item{
+.our-portfolio-block{
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.our-portfolio-item{
     width: 360px;
-}
-.our-portfolio-img{
-    margin-bottom: 32px;
-}
-.our-team-caption{
-    margin: 0 0 8px 16px;
-}
-.our-team-text{
-    margin: 0 0 8px 16px;
 }
 
 /* =================== footer ================= */
 
 .main-footer{
     background-color: #2e2f42;
-    padding: 100px 0 100px 156px;
+    padding: 100px 0;
 }
 .main-footer-text{
     line-height: 1.5;
@@ -234,7 +245,7 @@ background: #404bbf;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 .footer-logo-item{
