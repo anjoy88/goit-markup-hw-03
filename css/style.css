@@ -143,11 +143,12 @@ a{
 background: #404bbf;
 }
 /* ============== about ============ */
-
+.about{
+    padding: 120px 0;
+}
 .about-list{
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
     gap: 24px;
 }
 .about-item{
